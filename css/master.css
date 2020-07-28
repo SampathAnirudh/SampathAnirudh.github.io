@@ -1,0 +1,155 @@
+/* Cascading stylesheet for the website */
+
+/* Text inside these asterisks and slashes are comments for human */
+
+
+
+  #myVideo {
+    position:fixed;
+    top: 0;
+    right:0;
+    min-width:100% ;
+    min-height: 100vh;
+
+    z-index: -1;
+  }
+
+
+ a {
+    color: yellow;/* set the text color to blue here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+      z-index:1;
+  }
+
+   a:hover {
+    color:red; /* set the text color to red here */
+    text-decoration: none; /* This means we do not want hyperlinks to be underlined */
+  }
+
+  body {
+     position: relative;/* set the background color here */
+    color: white ;/* set the text color to black here */
+    font-family: Arial,sans-serif;/* set the font here */
+    text-align: center;  /* set the text alignment here */
+
+
+   }
+
+  footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+      z-index:1;
+  }
+
+  h1 {
+    margin-bottom: 0.5rem;
+    margin-top: 3rem;
+      z-index=1;
+  
+   }
+
+   h2 {
+    /* set the text color of to #075AAB here */
+    /* set both the bottom margin and top margin to 2.5rem here */
+    margin-top: 2.5rem;
+    margin-bottom:  3rem;
+      z-index:1;
+   }
+
+   h3 {
+    margin-bottom: 0;
+    margin-top: 2rem;
+      z-index:1;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+      z-index:1;
+
+  }
+  img:hover{
+    transform: scale(1.4);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    z-index:1;
+  }
+ h4 {
+    margin-bottom: 1rem;
+    margin-top: 0.5rem;
+      z-index:1;
+  }
+
+ h5 {
+    margin-top: 0.5rem;
+      z-index:1;
+  }
+
+   hr {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+
+  /* this controls how the bullet points in the resume page looks */
+  ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+      z-index:1;
+  }
+  .card {
+    grid-template-columns: 300px;
+     grid-template-rows: 210px 210px 80px;
+  grid-template-areas: "image" "text" "stats";
+    box-shadow: 10px 10px 15px rgba(255, 255, 255, 1);
+    max-width: 300px;
+    padding:20px 10px 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 18px;
+    font-family: serif ;
+    z-index:1;
+    background-image:  url('../images/back.jpg');
+    background-size: cover;
+    background-blend-mode: color-dodge;
+
+
+  }
+   .card:hover{
+
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    background-image: url(images/back.jpg);
+    background-size: auto;
+    z-index:1;
+    background-image:  url('../images/back.jpg');
+    background-size: cover;
+  }
+
+.cardimage{
+  grid-area: image;
+
+}
+
+  .card-text{
+    grid-area: text;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-bottom: 4px;
+    border-radius: 6px;
+    font-family: Georgia;
+
+  }
+
+
+.paras{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.container{
+
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 5px;
+  margin: 50px;
+  padding: 4px 4px 15px
+}
